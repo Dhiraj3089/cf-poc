@@ -1,4 +1,4 @@
-const mongoClient = require('../db/mongo_connection');
+const mongoClient = require('../../db/mongo_connection');
 const ObjectId = require('mongodb').ObjectId;
 
 class Meeting {
