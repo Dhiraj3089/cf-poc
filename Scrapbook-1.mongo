@@ -1,0 +1,28 @@
+// db.meeting_rooms.findOne({
+//     "room_id": 2,
+//     "bookings": {
+//         "$elemMatch":
+//         {
+//             "$or": [{
+//                 "$and":
+//                     [{ 
+//                         "booking_id": { "$ne": ObjectId("5ccfeed8a67f61538c00da84") }
+//                     , "room_booked_from": { "$lte": ISODate("2019-05-08T00:00:00.000Z") } }, { "room_booked_to": { "$gt": ISODate("2019-05-08T00:00:00.000Z") } 
+//                     }
+//                     ]
+//             }
+//               //  , { "$and": [{ "room_booked_from": { "$lt": "2019-05-08T04:00:00.000Z" } }, { "room_booked_to": { "$gte": "2019-05-08T04:00:00.000Z" } }] }
+//                 //, { "$and": [{ "room_booked_from": { "$gte": "2019-05-08T00:00:00.000Z" } }, { "room_booked_to": { "$lte": "2019-05-08T04:00:00.000Z" } }] }
+//                 ]
+            
+//         }
+//     }
+// })
+
+// db.meeting_rooms.findOne({
+//     "bookings": {
+//         "$elemMatch": {
+//             room_booked_from
+//         }
+//     }
+// })
